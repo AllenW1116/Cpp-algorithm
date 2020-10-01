@@ -31,7 +31,7 @@ void BubbleSort(int a[],int n,int i)
 			}
 		if (exchange == false)		//未发生交换时直接返回　　　
 			return;
-		else				//发生交换时继续递归调用
+		else				//发生交换时继续递归调用（一趟冒泡可以把无序区最小的元素归位）
 			BubbleSort(a,n,i + 1);
 	}
 }

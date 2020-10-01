@@ -159,6 +159,12 @@
     <ClInclude Include="顺序队.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="作业1-1.cpp" />
+    <ClCompile Include="作业1-2.cpp" />
+    <ClCompile Include="作业1-3.cpp" />
+    <ClCompile Include="作业1-4.cpp" />
+    <ClCompile Include="作业1-5.cpp" />
+    <ClCompile Include="作业1-6.cpp" />
     <ClCompile Include="例2-1.cpp" />
     <ClCompile Include="例2-10.cpp" />
     <ClCompile Include="例2-11.cpp" />
@@ -172,6 +178,7 @@
     <ClCompile Include="例2-6.cpp" />
     <ClCompile Include="例2-8.cpp" />
     <ClCompile Include="例3-10棋盘覆盖问题.cpp" />
+    <ClCompile Include="例3-11循环日程安排问题.cpp" />
     <ClCompile Include="例3-1分治法-快速排序.cpp" />
     <ClCompile Include="例3-2二分法中的划分算法.cpp" />
     <ClCompile Include="例3-3二路归并.cpp" />
@@ -181,6 +188,12 @@
     <ClCompile Include="例3-7寻找第k小元素.cpp" />
     <ClCompile Include="例3-8寻找两个等长有序序列的中位数.cpp" />
     <ClCompile Include="例3-9寻找最大子序列和.cpp" />
+    <ClCompile Include="例4-1输出所有完全数.cpp" />
+    <ClCompile Include="例4-3象棋算式.cpp" />
+    <ClCompile Include="例4-4简单选择排序.cpp" />
+    <ClCompile Include="例4-5冒泡排序.cpp" />
+    <ClCompile Include="例4-6字符串匹配.cpp" />
+    <ClCompile Include="例4-7字符串匹配-子串个数.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

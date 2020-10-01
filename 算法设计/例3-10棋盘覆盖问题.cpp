@@ -32,3 +32,6 @@ void ChessBoard(int tr, int tc, int dr, int dc, int size)
 		ChessBoard(tr, tc, tr + s - 1, tc + s - 1, s);
 		//将右下角作为特殊方格继续处理该象限
 	}
+
+}
+
