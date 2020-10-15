@@ -56,12 +56,12 @@ int FindX(BTNode *bt, int x, int level)
 	}
 }
 
-int main() {
-	int pre[] = { 1,2,4,5,3 };
-	int in[] = { 4,2,5,1,3 };
-	BTNode *B = CreatBTprein(pre, in, 5);  //构造二叉树
-
-	cout << FindX(B, 3, 1);  //输出2,测试通过
-	cout << FindX(B, 4, 1);  //输出3,测试通过
-	return 0;
-}
+//int main() {
+//	int pre[] = { 1,2,4,5,3 };
+//	int in[] = { 4,2,5,1,3 };
+//	BTNode *B = CreatBTprein(pre, in, 5);  //构造二叉树
+//
+//	cout << FindX(B, 3, 1);  //输出2,测试通过
+//	cout << FindX(B, 4, 1);  //输出3,测试通过
+//	return 0;
+//}

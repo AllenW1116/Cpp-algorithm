@@ -164,5 +164,71 @@
     <ClCompile Include="作业1-6.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="例4-8最大连续子序列和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-9求解幂集问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-10-0、1背包问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-11全排列问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-12任务分配问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-13求解幂集问题-递归方法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-14求解组合问题-递归方法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-15DFS遍历图-求简单路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-16BFS遍历图-求最短路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-17迷宫问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-18CSP-顾客送餐问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-1求幂集.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-0回溯法概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-2和为100的算式.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-3求解0、1背包问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-4求解简单装载问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-5求解复杂装箱问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-6求子集和问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="n皇后问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业2-2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业2-3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业2-4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
