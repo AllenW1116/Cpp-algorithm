@@ -16,19 +16,19 @@ using namespace std;
 //那就让最后一个元素把每个可能的值都取一遍！）
 //图解过程见ppt80页
 
-
-//void comb(int n, int k)	//求1..n中k个整数的组合
-//{
-//	if (k == 0)			//k为0时输出一个组合
-//		dispacomb();
-//	else
-//	{
-//		for (int i = k; i <= n; i++)
-//		{
-//			a[k - 1] = i;		//a[k-1]位置取k～n的整数
-//			comb(i - 1, k - 1);
-//		}
-//	}
-//}
+int a[]; //存放一个组合
+void comb(int n, int k)	//求1..n中k个整数的组合
+{
+	if (k == 0)			//k为0时输出一个组合
+		dispacomb();
+	else
+	{
+		for (int i = k; i <= n; i++)
+		{
+			a[k - 1] = i;		//a[k-1]位置取k～n的整数
+			comb(i - 1, k - 1);
+		}
+	}
+}
 
 

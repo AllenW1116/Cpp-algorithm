@@ -197,9 +197,6 @@
     <ClCompile Include="例4-18CSP-顾客送餐问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="例5-1求幂集.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="例5-0回溯法概述.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -228,6 +225,33 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="作业2-4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-7求解n皇后问题%28还没看%29.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-8求解图的m着色问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-9任务分配问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-10【排列树】活动安排问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-1【子集树】求幂集.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-11流水线作业调度问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例5-12任务调度CSP认证题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-0分支界限法概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-1-0，1背包问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -23,13 +23,13 @@
     <ProjectGuid>{BBFF60C0-73C2-42B7-98CD-EA086332BCEE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>算法设计</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
@@ -209,13 +209,21 @@
     <ClCompile Include="例4-8最大连续子序列和.cpp" />
     <ClCompile Include="例4-9求解幂集问题.cpp" />
     <ClCompile Include="例4-11全排列问题.cpp" />
-    <ClCompile Include="例5-1求幂集.cpp" />
+    <ClCompile Include="例5-11流水线作业调度问题.cpp" />
+    <ClCompile Include="例5-12任务调度CSP认证题.cpp" />
+    <ClCompile Include="例5-1【子集树】求幂集.cpp" />
     <ClCompile Include="例5-0回溯法概述.cpp" />
     <ClCompile Include="例5-2和为100的算式.cpp" />
     <ClCompile Include="例5-3求解0、1背包问题.cpp" />
     <ClCompile Include="例5-4求解简单装载问题.cpp" />
     <ClCompile Include="例5-5求解复杂装箱问题.cpp" />
     <ClCompile Include="例5-6求子集和问题.cpp" />
+    <ClCompile Include="例5-7求解n皇后问题%28还没看%29.cpp" />
+    <ClCompile Include="例5-8求解图的m着色问题.cpp" />
+    <ClCompile Include="例5-9任务分配问题.cpp" />
+    <ClCompile Include="例5-10【排列树】活动安排问题.cpp" />
+    <ClCompile Include="例6-0分支界限法概述.cpp" />
+    <ClCompile Include="例6-1-0，1背包问题.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
