@@ -247,6 +247,8 @@
     <ClCompile Include="例8-2最大子序列问题.cpp" />
     <ClCompile Include="例8-3三角形最小路径.cpp" />
     <ClCompile Include="例8-4最长公共子序列问题.cpp" />
+    <ClCompile Include="例8-5最长递增子序列.cpp" />
+    <ClCompile Include="例8-6编辑距离问题.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

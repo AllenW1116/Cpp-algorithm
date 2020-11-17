@@ -323,5 +323,11 @@
     <ClCompile Include="例8-4最长公共子序列问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="例8-5最长递增子序列.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-6编辑距离问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
