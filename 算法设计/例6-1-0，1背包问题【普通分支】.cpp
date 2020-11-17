@@ -8,6 +8,8 @@ using namespace std;
 
 
 //问题表示：ppt18页
+//这也是分支界限法解决子集树问题的框架！
+// 普通分支界限法
 struct NodeType		//队列中的结点类型
 {
 	int no;			//结点编号，从1开始
@@ -41,6 +43,7 @@ void bound(NodeType& e)			//计算分枝结点e的上界
 	else						//余下物品全部可以装入
 		e.ub = sumv;
 }
+
 
 void EnQueue(NodeType e, queue<NodeType>& qu)
 //结点e进队qu

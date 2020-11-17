@@ -251,7 +251,76 @@
     <ClCompile Include="例6-0分支界限法概述.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="例6-1-0，1背包问题.cpp">
+    <ClCompile Include="例6-1-0，1背包问题【普通分支】.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-2-0、1背包问题【优先队列分支】.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-3图的单源最短路径【普通分支】.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-4图的单源最短路径【优先队列分支】.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-5任务分配问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例6-6流水线作业问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-0贪心法概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-1活动安排问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-2蓄栏保留问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-3背包问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-4最优装载问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-5田忌赛马问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-6多机调度问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-7哈夫曼编码.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-8带惩罚的任务调度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例7-9流水线作业调度问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业3-1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业3-2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业3-3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-0动态规划法概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-1整数拆分问题.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-2最大子序列问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-3三角形最小路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-4最长公共子序列问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

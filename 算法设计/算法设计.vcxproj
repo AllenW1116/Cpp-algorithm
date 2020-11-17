@@ -35,20 +35,20 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -169,6 +169,9 @@
     <ClCompile Include="作业2-2.cpp" />
     <ClCompile Include="作业2-3.cpp" />
     <ClCompile Include="作业2-4.cpp" />
+    <ClCompile Include="作业3-1.cpp" />
+    <ClCompile Include="作业3-2.cpp" />
+    <ClCompile Include="作业3-3.cpp" />
     <ClCompile Include="例2-1.cpp" />
     <ClCompile Include="例2-10.cpp" />
     <ClCompile Include="例2-11.cpp" />
@@ -223,7 +226,27 @@
     <ClCompile Include="例5-9任务分配问题.cpp" />
     <ClCompile Include="例5-10【排列树】活动安排问题.cpp" />
     <ClCompile Include="例6-0分支界限法概述.cpp" />
-    <ClCompile Include="例6-1-0，1背包问题.cpp" />
+    <ClCompile Include="例6-1-0，1背包问题【普通分支】.cpp" />
+    <ClCompile Include="例6-2-0、1背包问题【优先队列分支】.cpp" />
+    <ClCompile Include="例6-3图的单源最短路径【普通分支】.cpp" />
+    <ClCompile Include="例6-4图的单源最短路径【优先队列分支】.cpp" />
+    <ClCompile Include="例6-5任务分配问题.cpp" />
+    <ClCompile Include="例6-6流水线作业问题.cpp" />
+    <ClCompile Include="例7-0贪心法概述.cpp" />
+    <ClCompile Include="例7-1活动安排问题.cpp" />
+    <ClCompile Include="例7-2蓄栏保留问题.cpp" />
+    <ClCompile Include="例7-3背包问题.cpp" />
+    <ClCompile Include="例7-4最优装载问题.cpp" />
+    <ClCompile Include="例7-5田忌赛马问题.cpp" />
+    <ClCompile Include="例7-6多机调度问题.cpp" />
+    <ClCompile Include="例7-7哈夫曼编码.cpp" />
+    <ClCompile Include="例7-8带惩罚的任务调度.cpp" />
+    <ClCompile Include="例7-9流水线作业调度问题.cpp" />
+    <ClCompile Include="例8-0动态规划法概述.cpp" />
+    <ClCompile Include="例8-1整数拆分问题.cpp" />
+    <ClCompile Include="例8-2最大子序列问题.cpp" />
+    <ClCompile Include="例8-3三角形最小路径.cpp" />
+    <ClCompile Include="例8-4最长公共子序列问题.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
