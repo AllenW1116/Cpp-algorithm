@@ -329,5 +329,29 @@
     <ClCompile Include="例8-6编辑距离问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="例8-7-0、1背包问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-8完全背包问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-9资源分配问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-10会议安排问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-11滚动数组概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-12滚动数组-01背包问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例8-13滚动数组-上台阶问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例9-1Prim算法求最小生成树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
