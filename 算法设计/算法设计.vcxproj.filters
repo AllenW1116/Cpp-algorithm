@@ -311,9 +311,6 @@
     <ClCompile Include="例8-0动态规划法概述.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="例8-1整数拆分问题.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
     <ClCompile Include="例8-2最大子序列问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -353,5 +350,11 @@
     <ClCompile Include="例9-1Prim算法求最小生成树.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="例8-1整数拆分问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

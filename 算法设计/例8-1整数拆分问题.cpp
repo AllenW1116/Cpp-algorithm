@@ -26,7 +26,7 @@ using namespace std;
 int dp[MAXN][MAXN];			//动态规划数组
 void Split(int n,int k)		//求解算法
 {
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= k; j++)
         {
             if (i == 1 || j == 1)
@@ -38,6 +38,7 @@ void Split(int n,int k)		//求解算法
             else
                 dp[i][j] = dp[i][j - 1] + dp[i - j][j];
         }
+    }
 }
 
 //该方法还可以和递归法结合一下：【备忘录法】！

@@ -6,12 +6,15 @@
 #include<map>
 #include<stdlib.h>
 using namespace std;
+//给定一个有n（n≥1）个整数的序列，要求求出其中最大连续子序列的和。
+//例如
+//序列（ - 2，11， - 4，13， - 5， - 2）的最大子序列和为20
+
 //问题表示
 int n = 6;
 int a[] = { 0, - 2,11, - 4,13, - 5, - 2 };	//a数组不用下标为0的元素
 //求解结果表示
-int dp[MAXN];
-
+int dp[MAXN]; //dp[i]表示以a[i]结尾的数组的最大子序列和
 void maxSubSum()			//求dp数组
 {
 	dp[0] = 0;
