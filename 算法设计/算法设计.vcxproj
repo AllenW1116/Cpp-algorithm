@@ -175,10 +175,11 @@
     <ClCompile Include="作业3-1.cpp" />
     <ClCompile Include="作业3-2.cpp" />
     <ClCompile Include="作业3-3.cpp" />
+    <ClCompile Include="作业3-4.cpp" />
     <ClCompile Include="例2-1.cpp" />
     <ClCompile Include="例2-10.cpp" />
-    <ClCompile Include="例2-11.cpp" />
-    <ClCompile Include="例2-12.cpp" />
+    <ClCompile Include="例2-11二叉树中寻找路径.cpp" />
+    <ClCompile Include="例2-12输出十进制数各数位.cpp" />
     <ClCompile Include="例2-13简单选择排序.cpp" />
     <ClCompile Include="例2-14冒泡排序.cpp" />
     <ClCompile Include="例2-15求解递归方程.cpp" />
@@ -260,6 +261,10 @@
     <ClCompile Include="例8-8完全背包问题.cpp" />
     <ClCompile Include="例8-9资源分配问题.cpp" />
     <ClCompile Include="例9-1Prim算法求最小生成树.cpp" />
+    <ClCompile Include="例9-2Kruskal算法求最小生成树.cpp" />
+    <ClCompile Include="例9-3Dijkstra算法生成最短路径.cpp" />
+    <ClCompile Include="例9-4BellmanFord算法生成最短路径.cpp" />
+    <ClCompile Include="例9-5Folyd算法求最短路径.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

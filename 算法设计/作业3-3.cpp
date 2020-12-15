@@ -8,15 +8,51 @@
 //appleach
 //bananas
 //pearch
-//本题的关键在于如何判断【串s是否是串t的子序列】
-//对于s中的每个字符，不需要从t的开头开始搜索，而是从上一个匹配位置开始搜索。
+//该题的关键是：判断串s是否为串t的子序列。
+//这里我们使用一个比较笨的方法：贪心搜索，若有单个字符匹配，则s的指针++。
+//若最终s指针能指向s的末尾，说明s是t的子序列
 #include<iostream>
 #include<vector>
 #include<algorithm>
 #include<stdio.h>
 #include <queue>		
 #include<map>
+#include<vector>
+#define MAXV 10
+#define INF 500
 using namespace std;
-bool issub (string t, string s) {
-
+map<string, int> mark; // 记录生成的newname的长度
+bool isson(string s, string t) {
+	int i = 0, j = 0;
+	while (i < s.length() && j < t.length()) {
+		if (s[i] == t[j]) { i++; }
+		j++;
+	}
+	return i == s.length();
 }
+string confirm(string a, string b) {
+	int i = 0, j = 0;
+	for (i = 0; i < a.length(); i++) {
+		string left = a.substr(0, i + 1);   //"abcd".substr(0,1)="a";
+		for (j = 0; j < b.length(); j++) {
+			string right = b.substr(b.length() - j - 1, j + 1);
+			string newname = left + right;
+			if (isson(a, newname) && isson(b, newname)) { mark[newname] = newname.length(); }
+		}
+	}
+	map<string, int>::iterator it = mark.begin();
+	string ansname = it->first;
+	int minlength = it->second; it++;
+	//遍历map mark中的newname
+	while (it != mark.end()) {
+		if (it->second < minlength) { ansname = it->first; }
+		it++;
+	}
+	return ansname;
+}
+int main() {
+	map<string, int>::iterator it = mark.begin();
+	cout << confirm("apple", "peach");
+	return 0;
+}
+

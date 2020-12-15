@@ -3,30 +3,6 @@
 using namespace std;
 //【例2.11】假设二叉树采用二叉链存储结构，设计一个递归算法输出从根结点到值为x的结点的路径，假设二叉树中所有结点值不同。
 
-//在完成体目前，先来简单看一下vector用法。它类似于java中的List。
-//1 基本操作
-//
-//(1)头文件#include<vector>.
-//
-//(2)创建vector对象，vector<int> vec;
-//
-//(3)尾部插入数字：vec.push_back(a);
-//
-//(4)使用下标访问元素，cout << vec[0] << endl; 记住下标是从0开始的。
-//
-//(5)使用迭代器访问元素.
-//		vector<int>::iterator it;
-//		for (it = vec.begin(); it != vec.end(); it++)
-
-//(6)插入元素：    vec.insert(vec.begin() + i, a); 在第i个元素后面插入a;
-//
-//(7)删除元素：    vec.erase(vec.begin() + 2); 删除第3个元素
-//
-//vec.erase(vec.begin() + i, vec.end() + j); 删除区间[i, j - 1]; 区间从0开始
-//
-//(8)向量大小:vec.size();
-
-
 //用vector<int>向量path存放从根结点到x结点的正向路径。
 //f(b，x，path)的求解过程是：
 //若b为空树，返回false；
@@ -39,7 +15,7 @@ typedef struct BNode
 	struct BNode *lchild, *rchild;
 } BTNode;		//二叉链结点类型 ,定义是递归的
 
-bool Findxpath2(BTNode *bt, int x, vector<int> tmppath,vector<int> &path) 		//求根结点到x结点的（正向）路径
+bool Findxpath2(BTNode *bt, int x, vector<int> tmppath,vector<int> &path) 		//求根结点到x结点的（正向）路径;path作为全局变量存放解
 {
 	if (bt == NULL)			//空树返回false
 		return false;

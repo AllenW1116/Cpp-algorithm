@@ -80,12 +80,6 @@
     <ClCompile Include="例2-10.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="例2-11.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="例2-12.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="例2-13简单选择排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -351,6 +345,27 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="例8-1整数拆分问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例9-2Kruskal算法求最小生成树.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例9-3Dijkstra算法生成最短路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="作业3-4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例9-4BellmanFord算法生成最短路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例9-5Folyd算法求最短路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例2-11二叉树中寻找路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例2-12输出十进制数各数位.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
