@@ -188,6 +188,7 @@
     <ClCompile Include="例2-5.cpp" />
     <ClCompile Include="例2-6.cpp" />
     <ClCompile Include="例2-8.cpp" />
+    <ClCompile Include="例3-0分治法概述.cpp" />
     <ClCompile Include="例3-10棋盘覆盖问题.cpp" />
     <ClCompile Include="例3-11循环日程安排问题.cpp" />
     <ClCompile Include="例3-1分治法-快速排序.cpp" />
@@ -199,6 +200,7 @@
     <ClCompile Include="例3-7寻找第k小元素.cpp" />
     <ClCompile Include="例3-8寻找两个等长有序序列的中位数.cpp" />
     <ClCompile Include="例3-9寻找最大子序列和.cpp" />
+    <ClCompile Include="例4-0蛮力法概述.cpp" />
     <ClCompile Include="例4-10-0、1背包问题.cpp" />
     <ClCompile Include="例4-12任务分配问题.cpp" />
     <ClCompile Include="例4-13求解幂集问题-递归方法.cpp" />
@@ -265,9 +267,12 @@
     <ClCompile Include="例9-3Dijkstra算法生成最短路径.cpp" />
     <ClCompile Include="例9-4BellmanFord算法生成最短路径.cpp" />
     <ClCompile Include="例9-5Folyd算法求最短路径.cpp" />
+    <ClCompile Include="例4-13.5求解全排列问题-递归.cpp" />
+    <ClCompile Include="例2-16.N皇后问题.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="例3-9.5.分治法阶乘" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

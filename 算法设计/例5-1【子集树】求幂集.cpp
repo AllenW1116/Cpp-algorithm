@@ -25,16 +25,13 @@ void dfs(int a[], int n, int i, int x[]) //n：集合元素个数，也即解空
 	}
 }
 void dispasolution(int a[], int n, int x[]) {
+	cout << "{ ";
 	for (int i = 0; i < n; i++) {
 		if (x[i] == 1)  cout << a[i] << " ";
 		else cout << "  ";
 	}
+	cout << " }";
 	cout << endl;
 }
-//int main() {
-//	int a[] = { 1,2,3,4 };
-//	int x[] = { 0 };
-//	dfs(a, 4, 0, x);
-//	return 0;
-//} 通过！
+
 

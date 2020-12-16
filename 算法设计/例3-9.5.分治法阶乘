@@ -1,0 +1,19 @@
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
+public static double pow(double x,int n)
+{  if (n==0) return 1;
+   double p=pow(x,n/2);
+   if (n%2==1) return x*p*p;		//n为奇数
+   else return p*p;			//n为偶数
+}
+//阶乘都给你优化咯！求pow(x，n)对应的算法复杂度是O(log2n)。
+
+
+stl自带的pow阶乘用的是递归：
+int pow(int n) {
+	if (n == 0) return 1;
+	else return n * pow(n - 1);
+}

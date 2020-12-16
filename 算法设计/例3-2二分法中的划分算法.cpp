@@ -53,7 +53,7 @@ void delnode3(SqList *&L, ElemType x)
 		if (L->data[j] != x)		//找到不为x的元素
 		{
 			i++;			//扩大不为x的区间
-			if (i != j)		//将data[j]交换到不为x区间的末尾
+			if (i != j)		//将data[j]交换到不为x区间的末尾（通过交换，i永远指向“不为x区间”的末尾
 				swap(L->data[i],L->data[j]);
 		}
 		j++;			//继续扫描
@@ -61,3 +61,22 @@ void delnode3(SqList *&L, ElemType x)
 	L->length = i + 1;		//设置顺序表的长度
 }
 
+//类似于方法3，我们可以提出另一种快排的partition方法：
+//也可以将第一个元素归位，并且返回位置下标！
+int Partition2(int a[], int s, int t) 	//划分算法2
+{
+	int i = s, j = s + 1;
+	int base = a[s];			//以表首元素为基准
+	while (j <= t)				//j扫描所有元素
+	{
+		if (a[j] <= base)			//找到小于等于基准的元素a[j]
+		{
+			i++;
+			if (i != j)
+				swap(a[i], a[j]); 		//将R[i]与R[j]交换
+		}
+		j++;				//继续扫描
+	}
+	swap(a[s], a[i]);			//将基准a[s]和a[i]进行交换
+	return i;
+}

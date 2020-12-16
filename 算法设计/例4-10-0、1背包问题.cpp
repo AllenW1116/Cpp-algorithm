@@ -46,8 +46,8 @@ void Knap(int w[], int v[], int W)	//求所有的方案和最佳方案；物品重量数组 物品价
 		for (sit = (*it).begin(); sit != (*it).end(); ++sit)
 		{
 			printf("%d ", *sit);
-			sumw += w[*sit - 1];			//w数组下标从0开始
-			sumv += v[*sit - 1];			//v数组下标从0开始
+			sumw += w[*sit - 1];			//w数组下标从0开始，而ps中的下标从1开始
+			sumv += v[*sit - 1];			//v数组下标从0开始，而ps中的下标从1开始
 		}
 		printf("}\t\t%d\t%d  ", sumw, sumv);
 		if (sumw <= W)
@@ -71,18 +71,6 @@ void Knap(int w[], int v[], int W)	//求所有的方案和最佳方案；物品重量数组 物品价
 	printf("},");
 	printf("总重量:%d,总价值:%d\n", maxsumw, maxsumv);
 }
-
-int main()
-{
-	int n = 4, W = 6;
-	int w[] = { 5,3,2,1 };
-	int v[] = { 4,4,3,1 };
-	PSet(n);
-	printf("0/1背包的求解方案\n", n);
-	Knap(w, v, W);
-	return 0;
-}
-
 
 	
 

@@ -368,8 +368,23 @@
     <ClCompile Include="例2-12输出十进制数各数位.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="例3-0分治法概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-0蛮力法概述.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例4-13.5求解全排列问题-递归.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="例2-16.N皇后问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="例3-9.5.分治法阶乘">
+      <Filter>源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>

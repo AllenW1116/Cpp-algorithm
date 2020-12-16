@@ -16,11 +16,11 @@ using namespace std;
 //	1，3，4，6，9 and 2，3，5，8，10 => 4，6，9 and 2，3，5
 //③ 若a[m1] > b[m2]，则舍弃序列a中后半部分（较大的一半），同时舍弃序列b中前半部分（较小的一半），要求舍弃的长度相等。舍弃一半即n / 2个元素。
 
-void prepart(int &s, int &t) {
+void prepart(int &s, int &t) { //a[s..t]prepart
 	s = s;
 	t = (t-s)/2+s;
 }
-void postpart(int &s, int &t) {
+void postpart(int &s, int &t) { //a[s..t]postpart
 	s = t-((t-s) / 2);
 	t = t;
 }

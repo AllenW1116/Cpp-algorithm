@@ -65,6 +65,6 @@ void main()
 	for (int i = 0; i < N; i++)  	//为a赋值为1,2，...,9
 		a[i] = i + 1;
 	printf("求解结果\n");
-	fun(op, a[0], a[0], a, 1);	//插入位置i从1开始
+	fun(op, a[0], a[0], a, 1);	//插入位置i从1开始;preadd初始为a[0]
 }
 

@@ -15,10 +15,10 @@ int k;				//棋盘大小
 int x, y;				//特殊方格的位置
 //求解问题表示
 int board[MAX][MAX];
-int tile = 1;
+int tile = 1;   //骨牌编号 从1开始
 
 
-void ChessBoard(int tr, int tc, int dr, int dc, int size)
+void ChessBoard(int tr, int tc, int dr, int dc, int size) //tr tc坐标左上角（源点） dr dc特殊方格坐标
 {
 	if (size == 1) return;			//递归出口
 	int t = tile++;			//取一个L型骨，其牌号为tile
@@ -28,10 +28,36 @@ void ChessBoard(int tr, int tc, int dr, int dc, int size)
 		ChessBoard(tr, tc, dr, dc, s);
 	else					//此象限中无特殊方格
 	{
-		board[tr + s - 1][tc + s - 1] = t;		//用t号L型骨牌覆盖右下角
+		board[tr + s - 1][tc + s - 1] = t;		//用t号L型骨牌覆盖右下角（特殊方格不在第一象限，缺角肯定不在这，先给它填上）
 		ChessBoard(tr, tc, tr + s - 1, tc + s - 1, s);
-		//将右下角作为特殊方格继续处理该象限
+		//将右下角作为特殊方格继续处理该象限（它不能再填了，可以作为这个象限的特殊方格）
 	}
-
+	//考虑右上角象限
+	if (dr < tr + s && dc >= tc + s)
+		ChessBoard(tr, tc + s, dr, dc, s);	//特殊方格在此象限中 
+	else					//此象限中无特殊方格
+	{
+		board[tr + s - 1][tc + s] = t;		//用t号L型骨牌覆盖左下角
+		ChessBoard(tr, tc + s, tr + s - 1, tc + s, s);
+		//将左下角作为特殊方格继续处理该象限
+	}
+	//处理左下角象限
+	if (dr >= tr + s && dc < tc + s)		//特殊方格在此象限中
+		ChessBoard(tr + s, tc, dr, dc, s);
+	else					//此象限中无特殊方格
+	{
+		board[tr + s][tc + s - 1] = t;  		//用t号L型骨牌覆盖右上角
+		ChessBoard(tr + s, tc, tr + s, tc + s - 1, s);
+		//将右上角作为特殊方格继续处理该象限
+	}
+	//处理右下角象限
+	if (dr >= tr + s && dc >= tc + s)	//特殊方格在此象限中
+		ChessBoard(tr + s, tc + s, dr, dc, s);
+	else				//此象限中无特殊方格
+	{
+		board[tr + s][tc + s] = t;  	//用t号L型骨牌覆盖左上角
+		ChessBoard(tr + s, tc + s, tr + s, tc + s, s);
+		//将左上角作为特殊方格继续处理该象限
+	}
 }
 

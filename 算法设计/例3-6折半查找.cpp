@@ -3,7 +3,9 @@
 #include<algorithm>
 using namespace std;
 
-//基本思路：设a[low..high]是当前的查找区间（递增），首先确定该区间的中点位置mid = (low + high) / 2；然后将待查的k值与a[mid].key比较：
+//前提条件：【序列递增】
+//基本思路：设a[low..high]是当前的查找区间（递增），首先确定该区间的中点位置mid = (low + high) / 2；
+//然后将待查的k值与a[mid].key比较：
 //（1）若k == a[mid]，则查找成功并返回该元素的物理下标；
 //（2）若k<a[mid]，则由表的有序性可知a[mid..high]均大于k，因此若表中存在关键字等于k的元素，
 //	则该元素必定位于左子表a[low..mid - 1]中，故新的查找区间是左子表a[low..mid - 1]；

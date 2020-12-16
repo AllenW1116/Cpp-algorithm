@@ -16,7 +16,7 @@ struct NodeType		//队列中的结点类型
     int v;			//当前结点的总价值
     int x[MAXN];		//当前结点包含的解向量
     double ub;			//上界
-    bool operator<(const NodeType& s) const	//重载<关系函数
+    bool operator<(const NodeType& s) const	//重载<关系函数（优先队列肯定要重载比较函数，值大者【优先】）
     {
         return ub < s.ub;		//ub越大越优先出队
     }
@@ -56,7 +56,7 @@ void bfs()				//求0/1背包的最优解
 {
     int j;
     NodeType e, e1, e2;			//定义3个结点
-    priority_queue<NodeType> qu;	//定义一个优先队列（大根堆）
+    priority_queue<NodeType> qu;	//定义一个优先队列（大根堆）（你管它啥是大根堆，反正先出来那个大就完事）
 
     e.i = 0;				//根结点置初值，其层次计为0
     e.w = 0; e.v = 0;

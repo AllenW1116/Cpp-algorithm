@@ -9,7 +9,7 @@
 
 int x[MAXN];		//临时解
 int cost = 0;		//临时解的成本
-int bestx[MAXN];	//最优解   x【i】=j表示人员i分配任务j
+int bestx[MAXN];	//最优解   x【i】=j表示人员i分配任务j，为0就是没分配任务
 int mincost = 9999;	//最优解的成本
 bool worker[MAXN];	//worker[j]表示任务j是否已经分配人员,
 int n = 4;

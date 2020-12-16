@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<stdio.h>
 using namespace std;
-//【问题描述】设有n = 2k个选手要进行网球循环赛，要求设计一个满足以下要求的比赛日程表：
+//【问题描述】设有n = 2^k个选手要进行网球循环赛，要求设计一个满足以下要求的比赛日程表：
 //（1）每个选手必须与其他n - 1个选手各赛一次。
 //（2）每个选手一天只能赛一次。
 //（3）循环赛在n - 1天之内结束。
@@ -28,13 +28,15 @@ void Plan(int k)
 	{
 		temp = n;				//temp=2^t
 		n = n * 2; 				//n=2^(t+1)
-		for (i = temp + 1; i <= n; i++)		//填左下角元素
+		for (i = temp + 1; i <= n; i++)		//填左下角元素(左上角矩阵对应元素+当前size)
 			for (j = 1; j <= temp; j++)
-				a[i][j] = a[i - temp][j] + temp; 	//产生左下角元素
-		for (i = 1; i <= temp; i++)		//填右上角元素
+				a[i][j] = a[i - temp][j] + temp; 	
+
+		for (i = 1; i <= temp; i++)		//填右上角元素（左下角元素复制）
 			for (j = temp + 1; j <= n; j++)
 				a[i][j] = a[i + temp][(j + temp) % n];
-		for (i = temp + 1; i <= n; i++)	//填右下角元素
+
+		for (i = temp + 1; i <= n; i++)	//填右下角元素（左上角元素复制）
 			for (j = temp + 1; j <= n; j++)
 				a[i][j] = a[i - temp][j - temp];
 	}

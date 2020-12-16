@@ -19,7 +19,7 @@ using namespace std;
 int a[]; //存放一个组合
 void comb(int n, int k)	//求1..n中k个整数的组合
 {
-	if (k == 0)			//k为0时输出一个组合
+	if (k == 0)			//k为0时【输出】一个组合
 		dispacomb();
 	else
 	{
