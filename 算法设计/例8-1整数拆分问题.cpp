@@ -20,7 +20,7 @@ using namespace std;
 //当n = 1或者k = 1： f（n，k）= 1
 //当n < k：f（n，k） = f(n，n)
 //当n = k：f（n，k） = f(n，n - 1) + 1
-//其他情况：f(n - k，k) + f(n，k - 1)
+//其他情况：f(n - k，k) + f(n，k - 1)  包含k的情况+不包含k的情况
 
 
 int dp[MAXN][MAXN];			//动态规划数组

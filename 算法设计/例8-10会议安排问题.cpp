@@ -49,7 +49,7 @@ void solve()			//求dp和pre
 	for (int i = 1; i < n; i++)
 	{
 		int low = 0, high = i - 1;
-		while (low <= high)	//在A[0..i-1]中查找结束时间早于
+		while (low <= high)	//在A[0..i-1]中查找结束时间早于  (二分查找优化一下
 				  //A[i].b的最晚订单A[low-1]
 		{
 			int mid = (low + high) / 2;
